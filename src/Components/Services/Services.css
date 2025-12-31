@@ -1,0 +1,97 @@
+.services {
+  background: #fff2ea;
+  padding: 100px 10%;
+}
+
+.services-container {
+  display: flex;
+  gap: 80px;
+}
+
+/* LEFT */
+.services-left {
+  flex: 1;
+}
+
+.services-subtitle {
+  color: #c04a00;
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.services-left h2 {
+  font-size: 56px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+.services-left p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 32px;
+}
+
+.services-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* RIGHT */
+.services-right {
+  flex: 1;
+}
+
+.accordion-item {
+  border-top: 1px solid #e3cfc3;
+  padding: 22px 0;
+}
+
+.accordion-item:last-child {
+  border-bottom: 1px solid #e3cfc3;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion-header h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #8b3a00;
+}
+
+.arrow {
+  font-size: 22px;
+  color: #8b3a00;
+}
+
+.accordion-content {
+  margin-top: 14px;
+}
+
+.accordion-content p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .services-container {
+    flex-direction: column;
+  }
+
+  .services-left h2 {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,49 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://info.ehl.edu/hubfs/Food_And_Beverage_Industry_Trends_001.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+/* Dark overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding-left: 10%;
+  color: #fff;
+  max-width: 900px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-content {
+    padding-left: 6%;
+  }
+}

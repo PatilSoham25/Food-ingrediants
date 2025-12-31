@@ -1,0 +1,124 @@
+.opportunities {
+  width: 100%;
+  background: #fff;
+}
+
+.op-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* LEFT */
+.op-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CIRCLE */
+.circle {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  border: 18px solid #6b8c96;
+}
+
+/* Center */
+.circle-center {
+  position: absolute;
+  inset: 110px;
+  background: #fff;
+  border-radius: 50%;
+  border: 6px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-center span {
+  background: #e45c9a;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.circle-center p {
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Fake segments (labels only – visual match) */
+.circle-segment {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+
+.s1 { top: 30px; left: 50%; transform: translateX(-50%); }
+.s2 { top: 110px; right: 20px; }
+.s3 { bottom: 110px; right: 20px; }
+.s4 { bottom: 30px; left: 50%; transform: translateX(-50%); }
+.s5 { bottom: 110px; left: 20px; }
+.s6 { top: 110px; left: 20px; }
+
+/* RIGHT */
+.op-right {
+  flex: 1;
+  background: #fff2ea;
+  padding: 100px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.op-subtitle {
+  color: #d35400;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.op-right h2 {
+  font-size: 56px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.op-right p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+  max-width: 520px;
+  margin-bottom: 32px;
+}
+
+.op-btn {
+  width: fit-content;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .op-container {
+    flex-direction: column;
+  }
+
+  .op-right {
+    padding: 60px 40px;
+  }
+
+  .op-right h2 {
+    font-size: 40px;
+  }
+}

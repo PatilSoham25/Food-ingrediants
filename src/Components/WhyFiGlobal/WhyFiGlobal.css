@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+.why-section {
+  padding: 80px 10%;
+  background: #ffffff;
+}
+
+.why-container {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+/* LEFT */
+.why-left {
+  flex: 1;
+}
+
+.why-subtitle {
+  color: #a14b2c;
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.why-left h1 {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #222;
+  margin-bottom: 32px;
+}
+
+.why-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* RIGHT */
+.why-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.why-item {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.why-icon {
+  width: 58px;
+  height: 58px;
+  background: #e45c9a;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-item p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #222;
+  max-width: 420px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .why-container {
+    flex-direction: column;
+  }
+
+  .why-left h1 {
+    font-size: 38px;
+  }
+}
