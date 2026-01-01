@@ -7,8 +7,10 @@
 
 /* TOP */
 .footer-top {
+  width: 800px;
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   gap: 120px; /* controls distance between brand + partners */
   margin-bottom: 40px;
 }

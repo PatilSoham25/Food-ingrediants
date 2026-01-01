@@ -6,7 +6,7 @@ export default function Footer() {
       {/* TOP SECTION */}
       <div className="footer-top">
         {/* LEFT */}
-        <div className="footer-brand">
+        <div className="footer-brand" data-aos="fade-right">
           <h2>Fi Global</h2>
 
           <div className="social-icons">
@@ -19,7 +19,7 @@ export default function Footer() {
         </div>
 
         {/* RIGHT */}
-        <div className="footer-partners">
+        <div className="footer-partners" data-aos="fade-left">
           <h4>Partners</h4>
           <ul>
             <li>Innova Market Insights</li>
@@ -34,7 +34,7 @@ export default function Footer() {
       {/* BOTTOM SECTION */}
       <div className="footer-bottom">
         {/* ABOUT */}
-        <div className="footer-about">
+        <div className="footer-about" data-aos="fade-up">
           <h3>About us</h3>
           <p>
             Fi Global has been connecting the food ingredients industry for over
@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
 
         {/* LINKS */}
-        <div className="footer-links">
+        <div className="footer-links" data-aos="fade-left">
           <div>
             <h4>Sustainability →</h4>
             <p>Get in touch with us.</p>

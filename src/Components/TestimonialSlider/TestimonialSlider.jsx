@@ -41,7 +41,7 @@ const TestimonialSlider = () => {
   }, []);
 
   return (
-    <section className="testimonial">
+    <section className="testimonial" data-aos="zoom-in-up">
       <div className="testimonial-container">
 
         {/* IMAGE */}

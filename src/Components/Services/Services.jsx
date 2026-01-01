@@ -36,7 +36,7 @@ const Services = () => {
       <div className="services-container">
 
         {/* LEFT */}
-        <div className="services-left">
+        <div className="services-left" data-aos="zoom-in">
           <span className="services-subtitle">Services</span>
           <h2>Succeed with Fi</h2>
 
@@ -53,7 +53,7 @@ const Services = () => {
         </div>
 
         {/* RIGHT */}
-        <div className="services-right">
+        <div className="services-right" data-aos="flip-left">
           {servicesData.map((item, index) => (
             <div
               key={index}

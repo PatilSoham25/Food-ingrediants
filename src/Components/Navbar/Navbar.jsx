@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar-section">
+      <div className="navbar-section" data-aos="fade-down">
         <div className="nav-logo">
           <img
             src="https://www.figlobal.com/content/experience-fragments/esa/hn/figlobal/navigation-experience-fragment/master/_jcr_content/root/n1navigationbar_copy/image1.coreimg.png/1707472060559/fi-global-logo.png"

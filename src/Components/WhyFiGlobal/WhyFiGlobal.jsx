@@ -25,7 +25,7 @@ const WhyFiGlobal = () => {
       <div className="why-container">
 
         {/* LEFT */}
-        <div className="why-left">
+        <div className="why-left" data-aos="fade-right">
           <span className="why-subtitle">Why Fi Global</span>
           <h1>
             A world of taste
@@ -36,7 +36,7 @@ const WhyFiGlobal = () => {
         </div>
 
         {/* RIGHT */}
-        <div className="why-right">
+        <div className="why-right" data-aos="fade-down">
           {features.map((item, index) => (
             <div className="why-item" key={index}>
               <div className="why-icon">{item.icon}</div>

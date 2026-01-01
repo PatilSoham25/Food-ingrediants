@@ -6,7 +6,7 @@ const Opportunities = () => {
       <div className="op-container">
 
         {/* LEFT – CIRCLE */}
-        <div className="op-left">
+        <div className="op-left" data-aos="fade-down-right">
           <div className="circle">
             <div className="circle-center">
               <span>Fi</span>
@@ -23,7 +23,7 @@ const Opportunities = () => {
         </div>
 
         {/* RIGHT – CONTENT */}
-        <div className="op-right">
+        <div className="op-right" data-aos="fade-left">
           <span className="op-subtitle">How we do it</span>
           <h2>Opportunities<br />for every<br />palate</h2>
 
