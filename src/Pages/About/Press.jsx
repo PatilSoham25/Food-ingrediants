@@ -1,6 +1,6 @@
 import React from "react";
 import { Tickets, TicketCheck, Lightbulb, MapPinCheck, BrainCog, Factory } from 'lucide-react';
-import "./press.css";
+import "./Press.css";
 
 const Press = () => {
   return (
