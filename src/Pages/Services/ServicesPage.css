@@ -1,0 +1,299 @@
+/* ================= RESET & GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.primary-btn {
+  background: #000;
+  color: #fff;
+  padding: 14px 30px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: #c04a00;
+}
+
+/* ================= HERO ================= */
+.services-hero {
+  height: 90vh;
+  background: url("https://images.unsplash.com/photo-1556910103-1c02745aae4d")
+    center / cover no-repeat;
+  position: relative;
+}
+
+.services-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+  color: #fff;
+}
+
+.services-hero-overlay span {
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.services-hero-overlay h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+/* ================= WHY SERVICES ================= */
+.services-why {
+  padding: 100px 10%;
+  display: flex;
+  gap: 80px;
+}
+
+.services-why-left {
+  flex: 1;
+}
+
+.section-tag {
+  color: #c04a00;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.services-why-left h2 {
+  font-size: 54px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.services-why-left p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.services-why-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.services-why-right div {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.services-why-right span {
+  color: #c04a00;
+  margin-right: 12px;
+}
+
+/* ================= CRAFTING ================= */
+.services-crafting {
+  background-color: #fff2ea;
+  padding: 100px 20%;
+  text-align: center;
+}
+
+.services-crafting h2 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #c04a00;
+  margin-bottom: 40px;
+}
+
+.services-crafting p {
+  font-size: 25px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* ================= SERVICE BLOCKS ================= */
+.service-block {
+  display: flex;
+  align-items: center;
+  padding: 40px 5%;
+  gap: 60px;
+}
+
+.service-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-text,
+.service-image {
+  flex: 1;
+  flex-shrink: 0;
+}
+
+.service-text h3 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #c04a00;
+}
+
+.service-text p {
+  font-size: 21px;
+  line-height: 1.6;
+  color: #6d452c;
+}
+
+/* 🔑 IMAGE FIX */
+.service-image {
+  width: 100%;
+  min-height: 420px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.img-one {
+  background-image: url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092");
+}
+
+.img-two {
+  background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836");
+}
+
+.img-three {
+  background-image: url("https://images.unsplash.com/photo-1556911261-6bd341186b2f");
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .services-hero {
+    height: 70vh;
+  }
+
+  .services-hero-overlay h1 {
+    font-size: 52px;
+  }
+
+  .services-why {
+    padding: 80px 6%;
+    gap: 40px;
+  }
+
+  .services-why-left h2 {
+    font-size: 42px;
+  }
+
+  .services-crafting {
+    padding: 80px 10%;
+  }
+
+  .services-crafting h2 {
+    font-size: 48px;
+  }
+
+  .service-image {
+    min-height: 320px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .services-hero {
+    height: 60vh;
+  }
+
+  .services-hero-overlay {
+    padding: 0 6%;
+  }
+
+  .services-hero-overlay span {
+    font-size: 14px;
+  }
+
+  .services-hero-overlay h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .services-why {
+    flex-direction: column;
+    padding: 60px 6%;
+  }
+
+  .services-why-left h2 {
+    font-size: 34px;
+  }
+
+  .services-why-left p {
+    font-size: 16px;
+  }
+
+  .services-why-right div {
+    font-size: 18px;
+  }
+
+  .services-crafting {
+    padding: 60px 6%;
+  }
+
+  .services-crafting h2 {
+    font-size: 36px;
+  }
+
+  .services-crafting p {
+    font-size: 16px;
+  }
+
+  .service-block {
+    flex-direction: column;
+    padding: 50px 6%;
+    gap: 30px;
+  }
+
+  .service-block.reverse {
+    flex-direction: column;
+  }
+
+  .service-image {
+    min-height: 240px; /* 🔑 mobile fix */
+  }
+
+  .service-text h3 {
+    font-size: 28px;
+  }
+
+  .service-text p {
+    font-size: 16px;
+  }
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .services-hero-overlay h1 {
+    font-size: 28px;
+  }
+
+  .services-why-left h2 {
+    font-size: 28px;
+  }
+
+  .services-crafting h2 {
+    font-size: 30px;
+  }
+
+  .services-cta h2 {
+    font-size: 28px;
+  }
+}
+}

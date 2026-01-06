@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+.newsletter {
+  background: #fdf1eb;
+  padding: 100px 5%;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.newsletter-subtitle {
+  color: #9b3f12;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.newsletter-title {
+  font-size: 52px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 60px;
+}
+
+/* FORM */
+.newsletter-form {
+  max-width: 720px;
+  margin: auto;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.form-grid input,
+.form-grid select {
+  padding: 16px 18px;
+  font-size: 16px;
+  border: 1.5px solid #9b3f12;
+  border-radius: 6px;
+  background: transparent;
+  outline: none;
+}
+
+.form-grid input::placeholder {
+  color: #555;
+}
+
+.form-grid select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%239b3f12' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  cursor: pointer;
+}
+
+/* CAPTCHA */
+.captcha-wrapper {
+  margin: 40px 0;
+  text-align: left;
+  max-width: 320px;
+}
+
+.captcha-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #222;
+  font-weight: 500;
+}
+
+.captcha-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #dcdcdc;
+  padding: 14px 16px;
+  border-radius: 4px;
+}
+
+.captcha-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.captcha-left input {
+  width: 20px;
+  height: 20px;
+}
+
+.captcha-left label {
+  font-size: 14px;
+  color: #222;
+}
+
+.captcha-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  color: #555;
+}
+
+.captcha-right img {
+  width: 32px;
+  margin-bottom: 2px;
+}
+
+.captcha-right small {
+  font-size: 9px;
+}
+
+/* BUTTON */
+.subscribe-btn {
+  width: 100%;
+  background: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.subscribe-btn:hover {
+  background: #000;
+}
+
+/* TEXT */
+.privacy-text {
+  font-size: 14px;
+  color: #444;
+  margin-top: 24px;
+  line-height: 1.6;
+}
+
+.privacy-text a {
+  color: #000;
+  font-weight: 500;
+}
+
+.newsletter-link {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .newsletter-title {
+    font-size: 38px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .captcha-wrapper {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter {
+    padding: 70px 4%;
+  }
+
+  .newsletter-title {
+    font-size: 28px;
+  }
+
+  .newsletter-link {
+    font-size: 16px;
+  }
+}

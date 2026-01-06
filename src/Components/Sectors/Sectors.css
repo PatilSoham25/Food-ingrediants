@@ -1,0 +1,95 @@
+/* Reset safety */
+* {
+  box-sizing: border-box;
+}
+
+.sectors {
+  background-color: #fdf1eb;
+  padding: 80px 5%;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+/* Subtitle */
+.sectors-subtitle {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #8b3a1a;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+/* Main heading */
+.sectors-title {
+  font-size: 44px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 50px;
+}
+
+/* Tags wrapper */
+.sectors-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+/* Individual tag */
+.sector-tag {
+  background-color: #f7ddd2;
+  color: #8b3a1a;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+/* Hover effect (desktop) */
+.sector-tag:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ------------------ Responsive ------------------ */
+
+@media (max-width: 1024px) {
+  .sectors-title {
+    font-size: 36px;
+  }
+
+  .sector-tag {
+    font-size: 15px;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectors {
+    padding: 60px 4%;
+  }
+
+  .sectors-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .sectors-tags {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectors-title {
+    font-size: 24px;
+  }
+
+  .sector-tag {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

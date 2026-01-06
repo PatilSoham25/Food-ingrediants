@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* REMOVE LINK DEFAULT STYLES */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* NAVBAR */
 .navbar-section {
   width: 100%;
@@ -25,16 +36,16 @@
 
 .nav-logo img {
   height: 60px;
-  width: 148px;
+  width: auto;
   cursor: pointer;
 }
 
 /* NAV LINKS */
 .nav-li {
-  width: 850px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  gap: 40px;
   color: gray;
   font-weight: 600;
   list-style: none;
@@ -52,27 +63,28 @@
 .dropdown span {
   display: flex;
   align-items: center;
+  gap: 4px;
   cursor: pointer;
 }
 
 .dropdown-menu {
   position: absolute;
-  top: 100%;
+  top: 110%;
   left: 0;
   background-color: white;
-  min-width: 160px;
-  padding: 10px 20px;
+  min-width: 180px;
+  padding: 12px 20px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
   transition: all 0.3s ease;
-  border-radius: 20px;
+  border-radius: 12px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   z-index: 100;
 }
 
 .dropdown-menu li {
-  padding: 5px 0;
+  padding: 8px 0;
   color: black;
 }
 
@@ -80,6 +92,7 @@
   font-weight: bold;
 }
 
+/* SHOW DROPDOWN */
 .dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
@@ -88,20 +101,17 @@
 
 /* BUTTONS */
 .nav-btn {
-  width: 300px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 10px;
 }
 
 .nav-btn button {
   border: 1px solid black;
-  padding: 10px 12px;
+  padding: 10px 14px;
   font-weight: 500;
   border-radius: 5px;
   cursor: pointer;
   background: white;
-  margin: 2px;
 }
 
 .nav-btn button:hover {
@@ -120,7 +130,8 @@
   position: fixed;
   top: 0;
   right: -100%;
-  width: 80%;
+  width: 100%;
+  max-width: 360px;
   height: 100vh;
   background-color: white;
   z-index: 999;
@@ -186,10 +197,9 @@
 }
 
 .mobile-dropdown-menu li:hover {
-    cursor: pointer;
-    font-weight: bold;
+  cursor: pointer;
+  font-weight: bold;
 }
-
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
