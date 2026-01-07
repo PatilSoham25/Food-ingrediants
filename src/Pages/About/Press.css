@@ -1,16 +1,18 @@
 .press-page {
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  /* overflow-x: hidden; */
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .press-hero {
-  height: 90vh;
+  min-height: 90vh;
   background-size: cover;
   background-position: center;
 }
 
 .press-hero-overlay {
-  height: 100%;
+  min-height: 90vh;
   background: rgba(0, 0, 0, 0.45);
   color: #fff;
   display: flex;
@@ -30,16 +32,16 @@
   font-size: 54px;
   font-weight: 700;
   max-width: 900px;
+  line-height: 1.2;
 }
 
-/* BENEFITS */
+/* ================= BENEFITS ================= */
 .press-benefits {
   background-color: #f4e6de;
-  height: 90vh;
+  padding: 80px 8%;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 60px;
-  padding: 80px 8%;
 }
 
 .section-label {
@@ -54,18 +56,18 @@
   font-weight: bold;
 }
 
+.press-benefits-left {
+  margin-top: 80px;
+}
+
 .press-benefits-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
-.press-benefits-left {
-  margin-top: 80px;
-}
-
 .benefit-card {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .benefit-card p {
@@ -80,15 +82,69 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
+/* ================= TABLET ================= */
+@media (max-width: 1024px) {
+  .press-hero h1 {
+    font-size: 42px;
+  }
+
   .press-benefits {
     grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .press-benefits-left {
+    margin-top: 0;
   }
 
   .press-benefits-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+  .press-hero-overlay {
+    padding: 0 6%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .press-tag {
+    font-size: 16px;
+  }
+
+  .press-hero h1 {
+    font-size: 28px;
+  }
+
+  .press-benefits {
+    padding: 60px 6%;
+  }
+
+  .section-label {
+    font-size: 20px;
+  }
+
+  .press-benefits h2 {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+
+  .press-benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .benefit-card {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .benefit-card .icon {
+    margin: 0 auto;
   }
 }
